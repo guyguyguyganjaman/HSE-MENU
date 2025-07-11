@@ -74,41 +74,48 @@
       text-align: center;
       margin-top: 40px;
     }
-
-    /* ===== Scroll marquee for the deals heading ===== */
-    .marquee {
+    /* Flashy Today's Deals marquee container */
+    .todays-deals-container {
+      background: linear-gradient(90deg, #ff004f, #ff7700, #ff004f);
+      border-radius: 12px;
+      padding: 15px 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 20px #ff7700;
       overflow: hidden;
+      position: relative;
+    }
+    .marquee {
       white-space: nowrap;
-      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
       animation: marquee 15s linear infinite;
-      color: #ff3399;
-      font-size: 24px;
+      color: #fff;
       font-weight: bold;
-      margin-bottom: 20px;
+      font-size: 1.1rem;
+      text-shadow: 0 0 6px #ff7700;
     }
     @keyframes marquee {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+      0% { transform: translateX(100%) }
+      100% { transform: translateX(-100%) }
     }
-
-    /* ===== Glow effect for deals text ===== */
-    .glow-text {
-      color: #ff66cc;
-      animation: pulse 2s infinite;
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      white-space: pre-line; /* respects new lines */
-      font-family: 'Courier New', Courier, monospace;
-      background: #222;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #ff66cc;
+    /* Deals details styled */
+    .deals-list {
+      margin-top: 15px;
+      color: #ffcc00;
+      font-weight: 600;
+      letter-spacing: 0.04em;
     }
-    @keyframes pulse {
-      0%   { text-shadow: 0 0 5px #ff66cc; }
-      50%  { text-shadow: 0 0 20px #ff66cc; }
-      100% { text-shadow: 0 0 5px #ff66cc; }
+    .deals-list p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+    .deals-list .strain-name {
+      color: #00ffee;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-top: 12px;
+      text-shadow: 0 0 8px #00ffee;
     }
   </style>
 </head>
@@ -121,6 +128,27 @@
       <p><strong>📦 SHIPPING ACROSS THE COUNTRY</strong></p>
       <p>🚨 TELL A FRIEND 🚨</p>
       <p><strong>Prices may vary based on location</strong></p>
+    </div>
+
+    <!-- Flashy Marquee Today's Deals -->
+    <div class="todays-deals-container">
+      <div class="marquee">🔥 TODAY'S DEALS: 3 for $50 (Gelato 45, Rainbow Sherbert, MAC) | 3 for $65 (Strawberries & Cream, Santa Maria) 🔥</div>
+      <div class="deals-list">
+        <p><span class="strain-name">Gelato 45</span><br>
+          $25 Qs Today | $45 Halfs</p>
+
+        <p><span class="strain-name">Rainbow Sherbet</span><br>
+          $40 Qs Today / $35 Pickup | $55 Halfs / $50 Pickup</p>
+
+        <p><span class="strain-name">Miracle Alien Cookies (MAC)</span><br>
+          $25 Qs Today | $45 Halfs</p>
+
+        <p><span class="strain-name">Santa Maria</span><br>
+          $45 Qs Today | $90 Halfs</p>
+
+        <p><span class="strain-name">Strawberries & Creme</span><br>
+          $45 Qs Today | $90 Halfs</p>
+      </div>
     </div>
 
     <div class="menu-section">
@@ -222,70 +250,23 @@
           <li>$60 a 1/8 // $55 pickup</li>
           <li>$110 a Q // $105 pickup</li>
           <li>$215 a Half</li>
-          <li>$370 an Ounce</li>
+          <li>$400 a Zip</li>
         </ul>
       </div>
 
-      <a href="#contact" class="section-link">📞 Contact for Orders</a>
+      <div class="strain">
+        <h3>🔠 HOT 🔥</h3>
+        <ul>
+          <li>$1 – Blue Jar</li>
+          <li>$5 – Yellow Jar</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- ======= NEW TODAY'S DEALS SECTION WITH MOVING TEXT ======= -->
-    <div class="marquee">🔥 TODAY’S DEALS — SCROLL FOR SAVINGS 🔥</div>
-
-    <pre class="glow-text">
-3 for $50 🔥 (GELATO 45 or Rainbow Sherbert or MAC )
-3 for $65 💨 ( STRAWBERRIES & CREAM or SANTA MARIA )
-
-STRAINS:
-
-• GELATO 45 – $20 1/8
-• RAINBOW SHERBERT – $25 1/8
-• MAC (Miracle Alien Cookies) – $25 1/8
-• STRAWBERRIES & CREAM – $30 1/8
-• SANTA MARIA – $30 1/8
-
-——————————————————-
-
-📞@ace_hse | 332-227-3255
-📸 Tap strain name for video
-
-
-🔥TODAYS DEALS:
-
-🧠 MOLLY (MDMA Crystals)
-🔥BUNDLES:
-• 2g + 2 Molly Caps – $210 (save $15)
-• 3.5g + 5 Molly Caps – $340 (save $55 total)
-• 1g + 0.25g FREE – $100 (great for first-timers)
-
-💊 MOLLY CAPS (0.125g each)
-*great reviews/trusted source*
-💥 BULK CAP DEALS:
-• 5 for $70 (save $5)
-• 10 for $110 (save $10)
-• 10 + 2 FREE – $120 (best value)
-
-✨ LSD / TABS
-⚡ BUNDLE:
-• 2 Paper + 1 Gel – $60 (perfect trip combo)
-• 4 Gels + 2 Paper – $100 (weekend wave for 2)
-• 10 Gels + 5 Paper – $200 (deep stash — save $130 total)
-
-🍄 ENIGMA SHROOMS
-🍄 SHROOM DEALS:
-• 8th of shrooms + 2 Molly Caps – $90 (save $15)
-• 7g of shrooms + 1 Tab (Paper or Gel) – $120 (trip set)
-
-🎥 Ask for vids or info — I’ll walk you through
-
-📞@ace_hse | 332-227-3255
-📸 Tap strain name for video
-    </pre>
-
-    <div class="contact" id="contact">
-      <p>Questions? Call or DM @ace_hse</p>
-      <p>☎️ 332-227-3255</p>
-      <p>📸 Tap strain name for video & info</p>
+    <div class="contact">
+      <p>📞 @ace_hse</p>
+      <p>📱 332-227-3255</p>
+      <p><strong>Tap anything to be taken to a video 🔗</strong></p>
     </div>
   </div>
 </body>
