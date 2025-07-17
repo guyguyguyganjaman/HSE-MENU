@@ -2,20 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HSE OF BUDZ Menu</title>
   <style>
+    /* Reset & Base Styles */
     body {
       font-family: 'Arial', sans-serif;
       background: #111;
       color: #f4f4f4;
       margin: 0;
       padding: 0;
+      padding-top: 60px; /* space for fixed banner */
+    }
+    /* Top Sale Banner */
+    #sale-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #ff0040, #ff7300, #ffff00, #00ff00, #00bfff, #8a2be2);
+      background-size: 600% 100%;
+      animation: backgroundShift 10s linear infinite;
+      color: white;
+      font-weight: 900;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      z-index: 9999;
+      user-select: none;
+    }
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
     }
     .container {
       max-width: 800px;
       margin: auto;
       padding: 30px 20px;
+      position: relative;
+      z-index: 1;
     }
     h1, h2 {
       text-align: center;
@@ -41,27 +67,31 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
     .strain {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .strain h3 {
-      margin: 0;
+      margin: 0 0 10px 0;
       font-size: 22px;
       color: #00aaff;
     }
-    .strain h3 a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-    .strain h3 a:hover {
-      text-decoration: underline;
+    .strain h3 small {
+      font-size: 14px;
+      color: #ccc;
     }
     .strain ul {
       list-style: none;
       padding-left: 0;
-      margin: 5px 0 0 0;
+      margin: 10px 0 0 0;
     }
     .strain ul li {
       color: #ccc;
+    }
+    video {
+      border-radius: 8px;
+      margin-top: 10px;
+      max-width: 50%;
+      height: auto;
+      display: block;
     }
     a.section-link {
       color: #00ffcc;
@@ -74,132 +104,81 @@
       text-align: center;
       margin-top: 40px;
     }
-    /* Flashy Today's Deals marquee container */
-    .todays-deals-container {
-      background: linear-gradient(90deg, #ff004f, #ff7700, #ff004f);
-      border-radius: 12px;
-      padding: 15px 10px;
-      margin-bottom: 25px;
-      box-shadow: 0 0 20px #ff7700;
-      overflow: hidden;
-      position: relative;
-    }
-    .marquee {
-      white-space: nowrap;
-      display: block;
-      overflow: hidden;
-      animation: marquee 15s linear infinite;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.1rem;
-      text-shadow: 0 0 6px #ff7700;
-    }
-    @keyframes marquee {
-      0% { transform: translateX(100%) }
-      100% { transform: translateX(-100%) }
-    }
-    /* Deals details styled */
-    .deals-list {
-      margin-top: 15px;
-      color: #ffcc00;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
-    .deals-list p {
-      margin: 6px 0;
-      font-size: 1rem;
-    }
-    .deals-list .strain-name {
-      color: #00ffee;
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      margin-top: 12px;
-      text-shadow: 0 0 8px #00ffee;
-    }
   </style>
 </head>
 <body>
+
+  <div id="sale-banner">
+    🚨 TODAY ONLY SALE! Grab 3 for $50, Grab 3 for $65! 🚨
+  </div>
+
   <div class="container">
     <h1>HSE OF BUDZ 🔔 MENU</h1>
     <div class="intro">
-      <p>UPDATED ‼️📍06/17</p>
+      <p>UPDATED ‼️📍07/17</p>
       <p>Your favorite underground black market 🔤</p>
       <p><strong>📦 SHIPPING ACROSS THE COUNTRY</strong></p>
       <p>🚨 TELL A FRIEND 🚨</p>
       <p><strong>Prices may vary based on location</strong></p>
     </div>
 
-    <!-- Flashy Marquee Today's Deals -->
-    <div class="todays-deals-container">
-      <div class="marquee">🔥 TODAY'S DEALS: 3 for $50 (Gelato 45, Rainbow Sherbert, MAC) | 3 for $65 (Strawberries & Cream, Santa Maria) 🔥</div>
-      <div class="deals-list">
-        <p><span class="strain-name">Gelato 45</span><br>
-          $25 Qs Today | $45 Halfs</p>
-
-        <p><span class="strain-name">Rainbow Sherbet</span><br>
-          $40 Qs Today / $35 Pickup | $55 Halfs / $50 Pickup</p>
-
-        <p><span class="strain-name">Miracle Alien Cookies (MAC)</span><br>
-          $25 Qs Today | $45 Halfs</p>
-
-        <p><span class="strain-name">Santa Maria</span><br>
-          $45 Qs Today | $90 Halfs</p>
-
-        <p><span class="strain-name">Strawberries & Creme</span><br>
-          $45 Qs Today | $90 Halfs</p>
-      </div>
-    </div>
-
+    <!-- FLOWER MENU -->
     <div class="menu-section">
       <h2>🌺 HIGH GRADE FLOWER</h2>
       <p><em>We always getting new drops from the latest weed designer</em></p>
       <p>Keep your lungs up-to-date 📆</p>
 
+      <!-- New Strains -->
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/17" target="_blank">🔥 GELATO 45</a></h3>
+        <h3>🆕 GELATO KUSHMINTS</h3>
+        <video controls>
+          <source src="videos/gelato-kushmints.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <ul>
-          <li>$20 – 1/8</li>
-          <li>$30 – Quarter</li>
-          <li>$50 – Half</li>
+          <li>$30 – 1/8</li>
+          <li>$50 – Quarter</li>
+          <li>$90 – Half</li>
+          <li>$180 – Zip</li>
+        </ul>
+      </div>
+
+      <div class="strain">
+        <h3>🆕 DUTCHBERRY</h3>
+        <video controls>
+          <source src="videos/dutchberry.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <ul>
+          <li>$25 – 1/8</li>
+          <li>$40 – Quarter</li>
+          <li>$65 – Half</li>
           <li>$80 – Zip</li>
         </ul>
       </div>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/18" target="_blank">🍨 RAINBOW SHERBERT</a></h3>
+        <h3>🆕 PLATINUM PUNCH</h3>
+        <video controls>
+          <source src="videos/platinum-punch.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <ul>
           <li>$25 – 1/8</li>
-          <li>$45 – Quarter</li>
+          <li>$40 – Quarter</li>
           <li>$60 – Half</li>
-          <li>$100 – Zip</li>
+          <li>$110 – Zip</li>
         </ul>
       </div>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/19" target="_blank">🛸 MIRACLE ALIEN COOKIES (MAC)</a></h3>
+        <h3>🆕 CHERRY SHERBERT <br /><small>By Preferred Gardens</small></h3>
+        <video controls>
+          <source src="videos/cherry-sherbert.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <ul>
-          <li>$25 – 1/8</li>
-          <li>$45 – Quarter</li>
-          <li>$60 – Half</li>
-          <li>$100 – Zip</li>
-        </ul>
-      </div>
-
-      <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/23" target="_blank">🍓 STRAWBERRIES & CREAM</a></h3>
-        <ul>
-          <li>$30 – 1/8</li>
-          <li>$60 – Quarter</li>
-          <li>$100 – Half</li>
-          <li>$200 – Zip</li>
-        </ul>
-      </div>
-
-      <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/20" target="_blank">✨ SANTA MARIA</a></h3>
-        <ul>
-          <li>$30 – 1/8</li>
+          <li>$35 – 1/8</li>
           <li>$60 – Quarter</li>
           <li>$100 – Half</li>
           <li>$200 – Zip</li>
@@ -209,11 +188,12 @@
       <a href="#condiments" class="section-link">🍯 View Condiments Menu</a>
     </div>
 
+    <!-- CONDIMENTS -->
     <div id="condiments" class="menu-section">
       <h2>🫙 CONDIMENTS</h2>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/12" target="_blank">Molly (MDMA)</a></h3>
+        <h3>Molly (MDMA)</h3>
         <p>🧠 Lab-tested | No Cut | Trusted Source</p>
         <ul>
           <li>0.25g — $40</li>
@@ -225,7 +205,7 @@
       </div>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/13" target="_blank">Molly Caps</a></h3>
+        <h3>Molly Caps</h3>
         <ul>
           <li>1 = $25</li>
           <li>2 = $40</li>
@@ -236,7 +216,7 @@
       </div>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/16" target="_blank">📜 Paper Tabs / 💧 Green Gels</a></h3>
+        <h3>📜 Paper Tabs / 💧 Green Gels</h3>
         <ul>
           <li>Paper: 1 – $20, 2 – $30, 4 – $50, 10 – $110</li>
           <li>Gels: 1 – $25, 2 – $40, 4 – $70, 10 – $150</li>
@@ -244,7 +224,7 @@
       </div>
 
       <div class="strain">
-        <h3><a href="https://t.me/c/2826657761/14" target="_blank">🍄 Enigmas</a></h3>
+        <h3>🍄 Enigmas</h3>
         <p>Heavy visuals, deep introspection, long-lasting waves 🔮</p>
         <ul>
           <li>$60 a 1/8 // $55 pickup</li>
