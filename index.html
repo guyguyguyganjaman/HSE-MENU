@@ -3,234 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HSE OF BUDZ Menu</title>
+  <title>Flower Menu</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      background-image: url('logo.png'), url('logo.png');
-      background-repeat: no-repeat, no-repeat;
-      background-position: left center, right center;
-      background-size: 150px auto, 150px auto;
-      color: #f4f4f4;
       margin: 0;
-      padding: 0;
-      position: relative;
-      z-index: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #FFD700; /* Gold */
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: -1;
+    .banner {
+      background-color: #6a0dad; /* Purple */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1.1em;
     }
 
     .container {
+      padding: 2em 1em;
       max-width: 800px;
       margin: auto;
-      padding: 30px 20px;
-      position: relative;
-      z-index: 1;
     }
 
     h1, h2 {
       text-align: center;
-    }
-
-    h1 {
-      color: #00ff99;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #ffaa00;
-      margin-top: 40px;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .menu-section {
-      background: #1a1a1acc;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #333;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      color: #FFD700;
     }
 
     .strain {
-      margin-bottom: 30px;
+      margin-bottom: 2em;
     }
 
-    .strain h3 {
-      margin: 0 0 10px 0;
-      font-size: 22px;
-      color: #00aaff;
-    }
-
-    .strain h3 a {
-      color: #00aaff;
+    .strain a {
+      color: #bb86fc; /* Purple for links */
       text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
     }
 
-    .strain h3 a:hover {
+    .strain a:hover {
       text-decoration: underline;
     }
 
-    .strain h3 small {
-      font-size: 14px;
-      color: #ccc;
+    .info {
+      margin-top: 0.3em;
+      font-size: 0.95em;
+      color: #FFD700;
     }
 
-    .strain ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 10px 0 0 0;
+    .btn-container {
+      text-align: center;
+      margin-top: 2em;
     }
 
-    .strain ul li {
-      color: #ccc;
-    }
-
-    video {
-      border-radius: 8px;
-      margin-top: 10px;
-      max-width: 50%;
-      height: auto;
-      display: block;
-    }
-
-    a.section-link {
-      color: #00ffcc;
+    .btn {
+      background-color: #6a0dad;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
       display: inline-block;
-      margin: 10px 0;
-      text-decoration: underline;
-      font-weight: bold;
     }
 
-    .contact {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .sale-banner {
-      background: #ffaa00;
-      color: #111;
-      font-weight: bold;
-      font-size: 24px;
-      padding: 12px 0;
-      text-align: center;
-      margin-bottom: 20px;
-      position: relative;
-      overflow: hidden;
-      height: 40px;
-    }
-
-    .sale-text {
-      position: absolute;
-      white-space: nowrap;
-      animation: moveSale 10s linear infinite;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    @keyframes moveSale {
-      0% { left: 100%; }
-      100% { left: -100%; }
+    .btn:hover {
+      background-color: #5a019b;
     }
   </style>
 </head>
 <body>
 
-  <div class="sale-banner">
-    <div class="sale-text">Grab 3 for $50 • Grab 3 for $65 • TODAY ONLY</div>
+  <div class="banner">
+    Buy a half of any strain & get any other strain for $60 flat
   </div>
 
   <div class="container">
-    <h1>HSE OF BUDZ 🔔 MENU</h1>
-    <div class="intro">
-      <p>UPDATED ‼️📍07/17</p>
-      <p>Your favorite underground black market 🔤</p>
-      <p><strong>📦 SHIPPING ACROSS THE COUNTRY</strong></p>
-      <p>🚨 TELL A FRIEND 🚨</p>
-      <p><strong>Prices may vary based on location</strong></p>
+    <h1>Flower Menu</h1>
+
+    <div class="strain">
+      <a href="https://t.me/c/2670550758/27" target="_blank">GRAPE JELLY</a>
+      <div class="info">By Preferred Gardens<br>8th $20 / Q $40 / Half $75 / Zip $150</div>
     </div>
 
-    <div class="menu-section">
-      <h2>🌺 HIGH GRADE FLOWER</h2>
-      <p><em>We always getting new drops from the latest weed designer</em></p>
-      <p>Keep your lungs up-to-date 📆</p>
-
-      <div class="strain">
-        <h3>🆕 <a href="https://t.me/c/2670550758/8" target="_blank">GELATO KUSHMINTS</a></h3>
-        <video controls>
-          <source src="videos/gelato-kushmints.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <ul>
-          <li>$30 – 1/8</li>
-          <li>$50 – Quarter</li>
-          <li>$90 – Half</li>
-          <li>$180 – Zip</li>
-        </ul>
-      </div>
-
-      <div class="strain">
-        <h3>🆕 <a href="https://t.me/c/2670550758/7" target="_blank">DUTCHBERRY</a></h3>
-        <video controls>
-          <source src="videos/dutchberry.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <ul>
-          <li>$25 – 1/8</li>
-          <li>$40 – Quarter</li>
-          <li>$65 – Half</li>
-          <li>$80 – Zip</li>
-        </ul>
-      </div>
-
-      <div class="strain">
-        <h3>🆕 <a href="https://t.me/c/2670550758/6" target="_blank">PLATINUM PUNCH</a></h3>
-        <video controls>
-          <source src="videos/platinum-punch.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <ul>
-          <li>$25 – 1/8</li>
-          <li>$40 – Quarter</li>
-          <li>$60 – Half</li>
-          <li>$110 – Zip</li>
-        </ul>
-      </div>
-
-      <div class="strain">
-        <h3>🆕 <a href="https://t.me/c/2670550758/9" target="_blank">CHERRY SHERBERT</a> <br /><small>By Preferred Gardens</small></h3>
-        <video controls>
-          <source src="videos/cherry-sherbert.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <ul>
-          <li>$35 – 1/8</li>
-          <li>$60 – Quarter</li>
-          <li>$100 – Half</li>
-          <li>$200 – Zip</li>
-        </ul>
-      </div>
-
-      <a href="#condiments" class="section-link">🍯 View Condiments Menu</a>
+    <div class="strain">
+      <a href="https://t.me/c/2670550758/24" target="_blank">LA POP ROCKS X PURPLE PUSH POP</a>
+      <div class="info">By Preferred Gardens | Seedjunky<br>8th $25 / Q $45 / Half $90 / Zip $180</div>
     </div>
 
-    <!-- Optional: Condiments section still here if you want -->
-    <div class="contact">
-      <p>📞 @ace_hse</p>
-      <p>📱 332-227-3255</p>
-      <p><strong>Tap a strain name to see more 🔗</strong></p>
+    <div class="strain">
+      <a href="https://t.me/c/2670550758/29" target="_blank">MEDELLIN</a>
+      <div class="info">By Blueprint<br>8th $30 / Q $55 / Half $100 / Zip $200</div>
+    </div>
+
+    <div class="strain">
+      <a href="https://t.me/c/2670550758/28" target="_blank">BLUEBERRY LEMONADE</a>
+      <div class="info">By Preferred Gardens | Surefire Selections<br>8th $35 / Q $65 / Half $125 / Zip $245</div>
+    </div>
+
+    <div class="btn-container">
+      <a href="condiments.html" class="btn">View Condiments Menu</a>
     </div>
   </div>
+
 </body>
 </html>
