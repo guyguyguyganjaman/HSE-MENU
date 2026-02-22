@@ -13,6 +13,31 @@
       color: #FFD700;
     }
 
+    /* Top bar with date & refresh */
+    .top-bar {
+      background-color: #333;
+      color: #FFD700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5em 1em;
+      font-size: 0.95em;
+    }
+
+    .top-bar button {
+      background-color: #6a0dad;
+      color: #fff;
+      border: none;
+      padding: 0.4em 0.8em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .top-bar button:hover {
+      background-color: #5a019b;
+    }
+
     .banner {
       background-color: #6a0dad;
       color: #fff;
@@ -54,9 +79,15 @@
       font-size: 1.1em;
     }
   </style>
-</head>
 
+</head>
 <body>
+
+  <!-- Top bar with date and refresh button -->
+  <div class="top-bar">
+    <div id="current-date"></div>
+    <button onclick="location.reload()">Refresh</button>
+  </div>
 
   <div class="banner">
     Hseofbudz.com — PEACE MY PEOPLE, FOR ALL MEDIA PM DIRECTLY @ACE_HSE ON TELEGRAM.<br>
@@ -149,6 +180,14 @@
     </div>
 
   </div>
+
+  <script>
+    // Display current date
+    const dateEl = document.getElementById('current-date');
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    dateEl.textContent = now.toLocaleDateString('en-US', options);
+  </script>
 
 </body>
 </html>
